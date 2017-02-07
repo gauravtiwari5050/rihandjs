@@ -1,0 +1,22 @@
+{
+  "name": "rihandjs",
+  "version": "0.0.1",
+  "description": "A tiny web framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gauravtiwari5050/rihandjs.git"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "gauravtiwari5050",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravtiwari5050/rihandjs/issues"
+  },
+  "homepage": "https://github.com/gauravtiwari5050/rihandjs#readme"
+}
