@@ -21,6 +21,7 @@
     "mongoose": "4.8.1",
     "mongoose-timestamp": "0.6.0",
     "morgan": "1.8.0",
+    "sqs-consumer": "^3.5.0",
     "uppercamelcase": "1.1.0",
     "winston": "2.3.1",
     "yamljs": "0.2.8",
