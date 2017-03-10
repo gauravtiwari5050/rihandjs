@@ -18,7 +18,7 @@
     "extend": "3.0.0",
     "handlebars": "4.0.6",
     "lodash": "4.17.4",
-    "mongoose": "4.8.1",
+    "mongoose": "4.5.8",
     "mongoose-timestamp": "0.6.0",
     "morgan": "1.8.0",
     "sqs-consumer": "^3.5.0",
