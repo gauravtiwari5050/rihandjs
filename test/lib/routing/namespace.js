@@ -1,28 +1,28 @@
 const assert = require('assert');
 const { expect } = require('chai'); // eslint-disable-line
-const { Namespace } = require('../../../lib/routing/routes_v2');
+const { Route } = require('../../../lib/routing/routes_v2');
 
-describe('class: Namespace', function() { // eslint-disable-line
+describe('class: Route', function() { // eslint-disable-line
   const httpMethods = ['Get', 'Put', 'Patch', 'Delete', 'Update'];
 
   describe('method: constructor', function() { // eslint-disable-line
     it('should correctly set path', function() { // eslint-disable-line
-      let namespace = new Namespace();
+      let namespace = new Route('/');
       assert.equal('/', namespace.path);
-      namespace = new Namespace({ path: '/path' });
+      namespace = new Route('/path');
       assert.equal('/path', namespace.path);
     });
   });
   describe('method: html', function() { // eslint-disable-line
     it('should set html as routeprops format', function() { // eslint-disable-line
-      const namespace = new Namespace();
+      const namespace = new Route('/html');
       namespace.html();
       assert.equal('HTML', namespace.props.format);
     });
   });
   describe('method: json', function() { // eslint-disable-line
     it('should set json as routeprops format', function() { // eslint-disable-line
-      const namespace = new Namespace();
+      const namespace = new Route('/json');
       namespace.json();
       assert.equal('JSON', namespace.props.format);
     });
@@ -30,7 +30,7 @@ describe('class: Namespace', function() { // eslint-disable-line
   describe(`methods: ${httpMethods}`, function() { // eslint-disable-line
     it('should setup routes with relevant methods', function() { // eslint-disable-line
       httpMethods.forEach(function(httpMethod){ // eslint-disable-line
-        const namespace = new Namespace();
+        const namespace = new Route('/');
         namespace[httpMethod]('/path => controller#action');
         assert.equal(1, namespace.routes.length);
         let path = namespace.routes[0];
