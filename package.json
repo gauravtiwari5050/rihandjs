@@ -4,7 +4,8 @@
   "description": "A tiny web framework",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint lib/routing/routes_v2.js"
+    "lint": "eslint lib/routing/routes_v2.js",
+    "test": "mocha --watch --recursive test/lib/ test/integration/"
   },
   "dependencies": {
     "aws-sdk": "^2.22.0",
