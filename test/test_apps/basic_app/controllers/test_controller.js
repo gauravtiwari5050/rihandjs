@@ -5,6 +5,13 @@ class TestController extends Rihand.Controller {
     next(null);
   }
   testAction(request, response, next) {
+    this.$var1 = 1;
+    next(null);
+  }
+  testActionJson(request, response, next) {
+    this.json = {
+      var1: 1,
+    };
     next(null);
   }
   testAfter(request, response, next) {

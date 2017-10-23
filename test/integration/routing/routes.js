@@ -13,7 +13,7 @@ describe('integration: Route', () => {
       assert.equal(1, rootNamespace.namespaces.length);
       assert.equal(2, rootNamespace.routes.length);
       const apiNamespace = rootNamespace.namespaces[0];
-      assert.equal('JSON', apiNamespace.props.format);
+      assert.equal('json', apiNamespace.props.format);
     });
   });
 

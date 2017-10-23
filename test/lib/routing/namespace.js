@@ -17,14 +17,14 @@ describe('class: Route', function() { // eslint-disable-line
     it('should set html as routeprops format', function() { // eslint-disable-line
       const namespace = new Route('/html');
       namespace.html();
-      assert.equal('HTML', namespace.props.format);
+      assert.equal('html', namespace.props.format);
     });
   });
   describe('method: json', function() { // eslint-disable-line
     it('should set json as routeprops format', function() { // eslint-disable-line
       const namespace = new Route('/json');
       namespace.json();
-      assert.equal('JSON', namespace.props.format);
+      assert.equal('json', namespace.props.format);
     });
   });
   describe(`methods: ${httpMethods}`, function() { // eslint-disable-line

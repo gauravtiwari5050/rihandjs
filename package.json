@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint lib/routing/routes_v2.js",
-    "test": "mocha --watch --recursive test/lib/ test/integration/"
+    "test": "mocha --watch --recursive test/lib/ test/integration/",
+    "test-unit": "mocha --watch --recursive test/lib/ ",
+    "test-integration": "mocha --watch --recursive test/integration/"
   },
   "dependencies": {
     "async": "^2.5.0",
