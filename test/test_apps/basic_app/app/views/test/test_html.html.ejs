@@ -1,0 +1,5 @@
+<p id="from_base_template">from_base_template_<%= $var1 %></p>
+<%- include('./template_in_same_directory.html.ejs')%>
+<% contentFor('blockString1', `blockString${$var1}`)%>
+<% contentFor('blockString2', `blockString${$var2}`)%>
+<% contentForTemplate('blockTemplate1', 'app/views/common/template.html.ejs')%>

@@ -1,4 +1,4 @@
-const Rihand = require('../../../../index');
+const Rihand = require('../../../../../index');
 
 class TestController extends Rihand.Controller {
   testBefore(request, response, next) {
@@ -8,6 +8,12 @@ class TestController extends Rihand.Controller {
     this.$var1 = 1;
     next(null);
   }
+
+  testHtml(request, response, next) {
+    this.$var1 = 1;
+    next(null);
+  }
+  
   testActionJson(request, response, next) {
     this.json = {
       var1: 1,
