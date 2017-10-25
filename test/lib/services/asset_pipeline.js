@@ -12,7 +12,7 @@ describe('class: AssetPipelineService', () => {
         env: 'test',
       });
 
-      application.initializeService('asset_pipeline', (err) => {
+      application.initializeServices(['asset_pipeline'], (err) => {
         if (err) {
           return done(err);
         }
