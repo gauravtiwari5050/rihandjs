@@ -1,5 +1,4 @@
 const assert = require('assert');
-const { expect } = require('chai'); // eslint-disable-line
 const path = require('path');
 const { Application } = require('../../../lib/application/application');
 
