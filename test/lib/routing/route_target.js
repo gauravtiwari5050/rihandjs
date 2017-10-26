@@ -3,6 +3,7 @@ const { expect } = require('chai'); // eslint-disable-line
 const { RouteTarget } = require('../../../lib/routing/route_target');
 const path = require('path');
 const HttpMocks = require('node-mocks-http'); // eslint-disable-line
+const { Application } = require('../../../lib/application/application');
 
 describe('class: RouteTarget', function() { // eslint-disable-line
   describe('method: isApplicable', function() { // eslint-disable-line
@@ -16,7 +17,7 @@ describe('class: RouteTarget', function() { // eslint-disable-line
     });
   });
   describe('method: invoke', function() { // eslint-disable-line
-    it('should check response from internalVariable', function(done) { // eslint-disable-line
+    /*it('should check response from internalVariable', function(done) { // eslint-disable-line
       const routeTarget = new RouteTarget();
       routeTarget.controller = 'test_controller';
       routeTarget.action = 'test_action';
@@ -48,6 +49,34 @@ describe('class: RouteTarget', function() { // eslint-disable-line
         const data = JSON.parse(response._getData()); // eslint-disable-line
         assert.equal(1, data.var1);
         done(err);
+      });
+    });*/
+    it('should check response for  valid html', function(done) { // eslint-disable-line
+
+      const application = new Application({
+        rootDirectory: path.resolve(__dirname, '../../test_apps/basic_app/'),
+        env: 'test',
+      });
+      application.initializeServices(['asset_pipeline', 'view'], (err) => {
+        if (err) {
+          return done(err);
+        }
+        application.service('view').locals.$fromViewService = 'fromViewService';
+        const routeTarget = new RouteTarget();
+        routeTarget.controller = 'test';
+        routeTarget.action = 'test_html_route_target';
+        routeTarget.namespace = '/';
+        routeTarget.props.format = 'HTML';
+        routeTarget.props.application = application;
+        routeTarget.props.layout = 'route_target_test';
+        const request = new HttpMocks.createRequest();  // eslint-disable-line
+        const response = new HttpMocks.createResponse();  // eslint-disable-line
+        return routeTarget.invoke({}, request, response, (errRouteTarget) => {
+          assert.equal('text/html; charset=utf-8', response.getHeader('Content-Type'));
+          assert.equal(200, response.statusCode);
+          console.log("Response view",response._getData());
+          done(errRouteTarget);
+        });
       });
     });
   });

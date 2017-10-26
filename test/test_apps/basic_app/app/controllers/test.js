@@ -1,6 +1,6 @@
 const Rihand = require('../../../../../index');
 
-class TestController extends Rihand.Controller {
+class Test extends Rihand.Controller {
   testBefore(request, response, next) {
     next(null);
   }
@@ -11,6 +11,13 @@ class TestController extends Rihand.Controller {
 
   testHtml(request, response, next) {
     this.$var1 = 1;
+    this.$var2 = 2;
+    next(null);
+  }
+
+  test_html_route_target(request, response, next) {
+    this.$var1 = 1;
+    this.$var2 = 2;
     next(null);
   }
   
@@ -29,7 +36,7 @@ class TestController extends Rihand.Controller {
   }
 }
 
-TestController.beforeFilter('testBefore');
-TestController.afterFilter('testAfter');
+Test.beforeFilter('testBefore');
+Test.afterFilter('testAfter');
 
-module.exports.TestController = TestController;
+module.exports.Test = Test;

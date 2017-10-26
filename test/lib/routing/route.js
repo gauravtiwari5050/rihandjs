@@ -57,7 +57,6 @@ describe('class: Route', function() { // eslint-disable-line
 
       route.via('put').via('post', 'patch');
       assert.deepEqual(['GET', 'PUT', 'POST', 'PATCH'], route.httpMethods);
-
     });
   });
 });

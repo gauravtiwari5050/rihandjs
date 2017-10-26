@@ -6,7 +6,7 @@ const sampleConstraint = function (request, response, callback) {
 const sampleConstraint2 = function (request, response, callback) {
   callback(true);
 };
-module.exports.loadRoute = () => {
+module.exports.loadRoutes = () => {
   Rihand.Route.getInstance().constraint(sampleConstraint).setup(function () {
     this.Get('/ => landing#home').constraint(sampleConstraint2);
     this.Get('/ => landing#home2');
