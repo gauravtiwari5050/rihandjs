@@ -11,7 +11,7 @@ describe('class: RouteService', () => {
         env: 'test',
       });
 
-      application.initializeServices(['asset_pipeline','view','route'], (err) => {
+      application.initializeServices(['asset_pipeline', 'view', 'route'], (err) => {
         if (err) {
           return done(err);
         }
