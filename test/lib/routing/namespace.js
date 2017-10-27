@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { expect } = require('chai'); // eslint-disable-line
-const { Route } = require('../../../lib/routing/routes_v2');
+const { Route } = require('../../../lib/routing/routes');
 
 describe('class: Route', function() { // eslint-disable-line
   const httpMethods = ['Get', 'Put', 'Patch', 'Delete', 'Update'];
