@@ -1,0 +1,4 @@
+Better shortcut for getting the current app instance
+var app = rihand.getServiceByName('web').getWebApplication();
+
+in the initializer we need to fetch the app, there should be a shortcut for this
