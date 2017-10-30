@@ -10,7 +10,7 @@
     "test-integration": "mocha --watch --recursive test/integration/"
   },
   "bin": {
-    "rihand": "cli.js"
+    "rihand": "./bin/cli.js"
   },
   "dependencies": {
     "async": "^2.5.0",
