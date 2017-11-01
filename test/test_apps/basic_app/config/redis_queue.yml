@@ -1,0 +1,17 @@
+# config/redis.yml
+# see https://github.com/mranney/node_redis#rediscreateclient for detailed connection options
+development:
+  connection:
+    host: localhost
+    port: 6379
+
+test:
+  connection:
+    db: 1
+    host: localhost
+    port: 6379
+
+production:
+  connection:
+    host: localhost
+    port: 6379
