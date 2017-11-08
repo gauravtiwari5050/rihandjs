@@ -24,9 +24,20 @@ const command = new Command({
   commandLineOptions: options,
 });
 
-command.execute((err) => {
+command.execute((err, params) => {
   if (err) {
     console.log(`Error executing command ${commandName}`, err);
+  }
+  if (_.isNil(params)) {
+    params = {}; // eslint-disable-line
+  }
+
+  if (err && _.isNil(params.exit)) {
+    params.exit = 1; // eslint-disable-line
+  }
+
+  if (!_.isNil(params.exit)) {
+    process.exit(params.exit);
   }
 });
 
