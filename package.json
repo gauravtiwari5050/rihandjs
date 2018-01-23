@@ -1,6 +1,6 @@
 {
   "name": "rihandjs",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "A tiny web framework",
   "main": "index.js",
   "scripts": {
