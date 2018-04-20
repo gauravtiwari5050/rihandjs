@@ -1111,11 +1111,12 @@ form-data@^2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-formic@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/formic/-/formic-0.0.3.tgz#03637ea198b373c2ccf80f53a62b1f99e57c7b22"
+formic@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/formic/-/formic-0.0.4.tgz#f23675bc3293cbc937c837ee1f7f0b4863783f2b"
   dependencies:
     camelcase "^4.1.0"
+    lodash "^4.17.5"
 
 formidable@^1.1.1:
   version "1.1.1"
@@ -1632,6 +1633,10 @@ lodash@4.17.4, lodash@^4.0.0, lodash@^4.12.0, lodash@^4.14.0, lodash@^4.15.0, lo
 lodash@^3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+
+lodash@^4.17.5:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
 long-timeout@0.1.1:
   version "0.1.1"
