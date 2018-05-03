@@ -31,7 +31,7 @@ const command = new Command({
       params = {}; // eslint-disable-line
     }
     if (_.isNil(params.exit)) {
-      params.exit = 1; // eslint-disable-line
+      params.exit = 0; // eslint-disable-line
     }
     if (!_.isNil(params.exit)) {
       process.exit(params.exit);
