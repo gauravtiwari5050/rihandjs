@@ -28,7 +28,7 @@
     "express": "4.14.1",
     "express-session": "^1.15.2",
     "extend": "3.0.0",
-    "formic": "^0.0.8",
+    "formic": "^0.0.9",
     "handlebars": "4.0.6",
     "kue": "^0.11.6",
     "lodash": "4.17.4",
