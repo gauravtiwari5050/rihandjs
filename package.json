@@ -46,6 +46,7 @@
     "sqs-consumer": "^3.5.0",
     "tmp": "^0.0.33",
     "uppercamelcase": "^3.0.0",
+    "vhost": "^3.0.2",
     "winston": "^2.4.0",
     "yamljs": "0.2.8"
   },
