@@ -1128,9 +1128,9 @@ form-data@^2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-formic@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/formic/-/formic-0.0.9.tgz#512d221938838babbf808bf1c1f2392aed91b469"
+formic@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/formic/-/formic-0.0.10.tgz#7084323a924503393bcd0289813f2f4f04d075f8"
   dependencies:
     camelcase "^4.1.0"
     lodash "^4.17.5"
