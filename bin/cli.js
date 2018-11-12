@@ -1,4 +1,5 @@
-#! /usr/bin/env node
+#!/bin/sh 
+":" //# comment; exec /usr/bin/env node --preserve-symlinks "$0" "$@"
 const process = require('process');
 const minimist = require('minimist');
 const _ = require('lodash');
