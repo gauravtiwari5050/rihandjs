@@ -2505,9 +2505,9 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
-sqs-consumer@^3.5.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/sqs-consumer/-/sqs-consumer-3.7.0.tgz#7e57c2e230df8f3b2982b0406c2c5b6062dd6581"
+sqs-consumer@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/sqs-consumer/-/sqs-consumer-3.8.0.tgz#36f3b24b7a3afc49a45b26e910593a7c41dc9b53"
   dependencies:
     async "^2.0.1"
     aws-sdk "^2.100.0"

@@ -41,7 +41,7 @@
     "nodemailer": "^4.4.1",
     "rimraf": "^2.6.2",
     "snake-case": "^2.1.0",
-    "sqs-consumer": "^3.5.0",
+    "sqs-consumer": "^3.8.0",
     "tmp": "^0.0.33",
     "uppercamelcase": "^3.0.0",
     "vhost": "^3.0.2",
