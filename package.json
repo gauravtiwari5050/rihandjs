@@ -16,10 +16,10 @@
   "dependencies": {
     "async": "^2.5.0",
     "aws-sdk": "^2.167.0",
-    "body-parser": "1.16.0",
+    "body-parser": "^1.19.0",
     "bytes": "^3.1.0",
     "camelcase": "4.0.0",
-    "compression": "1.6.2",
+    "compression": "^1.7.4",
     "connect-assets": "5.4.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
@@ -27,16 +27,16 @@
     "csurf": "^1.9.0",
     "decamelize": "1.2.0",
     "ejs": "^2.5.7",
-    "express": "4.14.1",
+    "express": "^4.17.1",
     "express-session": "^1.15.2",
     "extend": "^3.0.2",
     "file-type": "^10.9.0",
     "formic": "^0.0.10",
-    "handlebars": "4.0.6",
+    "handlebars": "^4.1.2",
     "js-yaml": "^3.12.0",
     "kue": "^0.11.6",
-    "lodash": "^4.17.10",
-    "mime-types": "^2.1.17",
+    "lodash": "^4.17.15",
+    "mime-types": "^2.1.24",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "morgan": "^1.9.1",
@@ -52,6 +52,11 @@
     "vhost": "^3.0.2",
     "winston": "^2.4.0",
     "yamljs": "0.2.8"
+  },
+  "resolutions": {
+    "kue/node-redis-warlock/node-redis-scripty/extend": "^3.0.2",
+    "connect-assets/mincer/lodash": "^4.17.15",
+    "connect-assets/mime": "^2.4.4"
   },
   "repository": {
     "type": "git",
@@ -69,10 +74,10 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.2",
-    "eslint": "^4.7.2",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^12.0.1",
     "eslint-plugin-import": "^2.7.0",
-    "mocha": "^3.5.3",
+    "mocha": "^6.2.0",
     "node-mocks-http": "^1.6.5",
     "supertest": "^3.0.0"
   }
