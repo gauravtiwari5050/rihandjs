@@ -55,6 +55,7 @@
   },
   "resolutions": {
     "kue/node-redis-warlock/node-redis-scripty/extend": "^3.0.2",
+    "connect-assets/mincer": "1.5.0",
     "connect-assets/mincer/lodash": "^4.17.15",
     "connect-assets/mime": "^2.4.4"
   },
