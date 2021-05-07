@@ -33,7 +33,7 @@
     "extend": "^3.0.2",
     "file-type": "^10.9.0",
     "formic": "^0.0.10",
-    "handlebars": "4.5.3",
+    "handlebars": "4.7.7",
     "js-yaml": "^3.12.0",
     "kue": "^0.11.6",
     "lodash": "4.17.19",
