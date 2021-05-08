@@ -36,7 +36,7 @@
     "handlebars": "4.5.3",
     "js-yaml": "^3.12.0",
     "kue": "^0.11.6",
-    "lodash": "4.17.19",
+    "lodash": "4.17.21",
     "mime-types": "^2.1.24",
     "minimist": "1.2.3",
     "mkdirp": "^0.5.1",
