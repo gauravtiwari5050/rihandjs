@@ -31,7 +31,7 @@
     "express": "^4.17.1",
     "express-session": "^1.15.2",
     "extend": "^3.0.2",
-    "file-type": "^10.9.0",
+    "file-type": "^16.5.4",
     "formic": "^0.0.10",
     "handlebars": "4.5.3",
     "js-yaml": "^3.12.0",
